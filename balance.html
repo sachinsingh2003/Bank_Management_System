@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Record</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="balance.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>𝓜𝓮𝓷𝓾</h2>
+            <ul>
+                <li><a href="profile.html">🏦 Account Profile</a></li>
+                <li><a href="password.html">🔒 Change Password</a></li>
+                <li><a href="balance.html">💰 Balance Record</a></li>
+                <li><a href="queries.html">📞 Account Queries</a></li>
+                <li><a href="login.html">🚪 Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1> 𝐵𝒶𝓁𝒶𝓃𝒸𝑒 𝑅𝑒𝒸𝑜𝓇𝒹</h1>
+            <div class="balance">
+                <h2>Current Balance: ₹<span id="balance-amount">50000</span></h2>
+            </div>
+
+            <div class="transactions">
+                <h2>Recent Transactions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transaction-list">
+                        <!-- Transactions will be added dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <h2>🏦 Your Bank</h2>
+                <div class="box">
+                    <h3>Company</h3>
+                    <a href="">Home <br></a>
+                    <a href="">About Us <br></a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="box">
+                    <h3>Useful Links</h3>
+                    <a href="">About Us <br></a>
+                    <a href="">Features <br></a>
+                    <a href="">Pages</a>
+                </div>
+                <div class="box">
+                    <h3>Support</h3>
+                    <a href="">support@yourbank <br></a>
+                    <a href="">FAQ's <br></a>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+        </div>
+    </div>
+
+    <script src="balance.js"></script>
+</body>
+</html>

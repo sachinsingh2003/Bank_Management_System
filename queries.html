@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Queries</title>
+    <link rel="stylesheet" href="queries.css">
+    <script src="queries.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar"> 
+            <h2>𝓜𝓮𝓷𝓾</h2>
+            <ul>
+                <li><a href="profile.html">🏦 Account Profile</a></li>
+                <li><a href="password.html">🔒 Change Password</a></li>
+                <li><a href="balance.html">💰 Balance Record</a></li>
+                <li><a href="queries.html">📞 Account Queries</a></li>
+                <li><a href="login.html">🚪 Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>𝒜𝒸𝒸𝑜𝓊𝓃𝓉 𝒬𝓊𝑒𝓇𝒾𝑒𝓈</h1>
+            <form id="queryForm">
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <input type="text" id="subject" placeholder="Enter Query Subject" required>
+                <textarea id="message" placeholder="Enter Your Query" required></textarea>
+                <button type="submit">Submit Query</button>
+            </form>
+
+            <h2>📋 Query History</h2>
+            <ul id="queryList"></ul>
+        </div>
+    </div>
+
+    <script src="queries.js"></script>
+</body>
+</html>

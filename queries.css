@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 10em;
+}
+
+
+.main-content {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#queryList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#queryList li {
+    background: #ecf0f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* --------- RESPONSIVENESS --------- */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        max-width: 90%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-content {
+        margin-left: 10px;
+        margin-top: 15px;
+        border: none; /* Remove the red border for a clean look */
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        border-radius: 0; /* Full width */
+    }
+
+    .main-content {
+        margin-left: 5px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #queryList li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/*Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: rgba(4, 57, 74, 0.9);
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar h2 {
+    font-size: 2.5rem;
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+    padding: 12px;
+    /* text-align: center; */
+    transition: 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    display: block;
+}
+/* Responsive Design */
+
+/* for screen larger then tablet */
+@media (max-width:1400px){
+    .sidebar {
+        width: 100%;
+        position: relative;
+        padding: 15px;
+        position: relative;
+    }
+    .sidebar h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/*  for tablet */
+@media (max-width: 768px){
+    .sidebar h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: -60px;
+    }
+}
+/* for mobile */
+@media (max-width: 600px) {
+    .sidebar h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
